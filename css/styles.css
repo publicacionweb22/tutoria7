@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    border: 4px solid orange;
+    height: 100vh;
+    display: flex; /* Los hijos pasan a ser elementos en línea */
+    /* Establece un sistema de ejes primario (por defecto es x) y secundario (por defecto es la y) */
+    justify-content:  center;/* Ordena los elementos en el eje primario*/ 
+    /*flex-start (ordena al inicio del eje (por defecto));*/
+    /*center (centra en el eje)*/
+    /*flex-end (ordena al final del eje)*/
+    /*space-between (ordena en cada extremo y reparte el espacio)*/
+    /*space-around (ordena repartiendo proporcionalmente el espacio)*/
+    align-items: stretch; /*Ordena los elementos en el eje secundario */
+    /*stretch (por defecto)*/
+    /*flex-start (ordena al inicio)*/
+    /*flex-end (ordena al final)*/
+    /*center*/
+}
+
+.caja {
+    width: 125px;
+    /* height: 125px; */
+    margin: 0 16px;
+}
+
+.azul {
+    background-color: cornflowerblue;
+}
+
+.verde {
+    background-color: darkcyan;
+}
+
+.roja {
+    background-color: darkred;
+}
+
+.morada {
+    background-color: violet;
+}
+
+.card {
+    width: 320px;
+    height: 480px;
+    margin: 32px;
+    box-shadow: 2px 2px 4px lightgray;
+    border-radius: 12px;
+    padding: 22px;
+    display: flex;
+    flex-direction: column; /* Invierte los Ejes primario pasa a ser y y el eje secundario pasa a ser x*/
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    background-color: tomato;
+    color: white;
+    padding: 12px 22px;
+}
